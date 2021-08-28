@@ -40,7 +40,7 @@ namespace EnviarEmail.Controllers
 
                 MailMessage emailMessage = new MailMessage(emailSender, emailRecipient);
 
-                emailMessage.Subject = "Teste Victor";
+                emailMessage.Subject = "Teste de Envio";
                 emailMessage.IsBodyHtml = true;
                 emailMessage.Body = "<h3>Título do Email</h3> <br /> <p>Parágrafo do Email</p>";
 
