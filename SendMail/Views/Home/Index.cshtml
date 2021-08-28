@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@using (Html.BeginForm("EnviaEmail", "Home", FormMethod.Post))
+{
+    <div>
+        <br />
+        <div>
+            @Html.TextBox("txtEmail", "", new { @class = "form-control" })
+        </div>
+
+        <br/>
+
+        <button class="btn btn-success">Enviar</button>
+    </div>
+}
